@@ -54,7 +54,7 @@ Output:
 * k_fin         : final number of Gaussians in the mixture
 * evidence      : evidence
 * W_last_normed : normed weights of the last level samples
-* f_s_iid       : iid samples
+* f_s_iid       : iid samples0001
 ---------------------------------------------------------------------------
 Based on:
 1. Engel, M., Kanjilal, O., Papaioannou, I., Straub, D. (2022)
@@ -107,7 +107,7 @@ else   % use distribution information for the transformation (independence)
     u2x = @(u) distr(1).icdf(normcdf(u));   % from u to x
 end
 
-%if dim < 2
+%if dim < 200
 %    error('The vMFN-mixture can only be applied to dim > 1');
 %end
 
